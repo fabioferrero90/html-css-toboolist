@@ -19,6 +19,7 @@ main {
     max-width:900px;
     margin:0 auto;
     background:white;
+    padding: 20px 40px;
 }
 
 /* ------------- Header Styling -------------- */
@@ -40,6 +41,50 @@ main {
     color:#031732;
     margin-left:5px;
     letter-spacing: -.05rem;
+}
+
+/* ------------ Actions Bar ------------  */
+#actionsbar {
+    padding-bottom:30px;
+}
+
+#actionsbar button {
+    padding:5px;
+    font-weight:600;
+    font-size: 0.75rem;
+    border-radius:10%;
+    border-style: solid;
+}
+
+#actionsbar .active {
+    background-color: #4dabe2;
+    color:white;
+    border-color: #4dabe2;
+}
+
+#actionsbar .inactive {
+    background-color: #ffffff;
+    color:lightgrey;
+    border-color: lightgrey;
+}
+
+/* ------------ Task List ------------  */
+#tasklist {
+    padding: 10px 15px;
+}
+
+#tasklist ul{
+    list-style: none;
+}
+
+#tasklist .category{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#tasklist .category::before {
+    content:'\25BC';
+    margin-right:5px;
 }
 
 /* Non richiesto dall'esercizio */
