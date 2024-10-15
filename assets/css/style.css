@@ -4,11 +4,48 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family:'Montserrat', sans-serif;
+}
 
+main {
+    padding-top:50px;
+    padding-bottom:30px;
+    background-color: #f6f8fa;
+}
+
+/* -------------- Utility --------------  */
+.container {
+    max-width:900px;
+    margin:0 auto;
+    background:white;
+}
+
+/* ------------- Header Styling -------------- */
+.fullsizeheader {
+    background-color: white;
+    width:100%;
+    padding:20px 20px;
+}
+
+.logocontainer img {
+    vertical-align:middle;
+}
+
+.logocontainer .logotitle {
+    vertical-align:middle;
+    display:inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#031732;
+    margin-left:5px;
+    letter-spacing: -.05rem;
+}
 
 /* Non richiesto dall'esercizio */
 footer {
     padding-top: 10px;
+    background-color: white;
 }
 
 footer p {
