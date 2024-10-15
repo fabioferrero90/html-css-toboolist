@@ -87,6 +87,90 @@ main {
     margin-right:5px;
 }
 
+#tasklist .task {
+    padding: 20px 20px;
+}
+
+/* --------------- Task Categories ---------------- */
+#tasklist .task.editorial::after {
+    content:"Editorial";
+    margin-left: 10px;
+    background-color: #4dabe2;
+    color:white;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.q1_goals::after {
+    content:"Q1 Goals";
+    margin-left: 10px;
+    background-color: #9b72e4;
+    color:white;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.recruiting::after {
+    content:"Recruiting";
+    margin-left: 10px;
+    background-color: #6dbea7;
+    color:white;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.mobile::after {
+    content:"Mobile";
+    margin-left: 10px;
+    background-color: #f99a38;
+    color:white;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.website::after {
+    content:"Website";
+    margin-left: 10px;
+    background-color: #db63a1;
+    color:white;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.sales::after {
+    content:"Sales";
+    margin-left: 10px;
+    background-color: #b0c92d;
+    color:white;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.completed::before {
+    content:'\2713';
+    margin-right: 10px;
+    color:green;
+    border:1px solid green;
+    border-radius: 50%;
+    padding:2px 5px;
+}
+
+#tasklist .task.uncompleted::before {
+    content:'\274C';
+    margin-right: 10px;
+    color:red;
+    border:1px solid red;
+    border-radius: 50%;
+    padding:5px 5px;
+    font-size:0.6rem;
+}
+
 /* Non richiesto dall'esercizio */
 footer {
     padding-top: 10px;
