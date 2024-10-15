@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Non richiesto dall'esercizio */
+footer {
+    padding-top: 10px;
+}
+
+footer p {
+    padding-top:5px;
+    text-align: center;
+    font-style: italic;;
+}
