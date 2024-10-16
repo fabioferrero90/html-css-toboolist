@@ -16,7 +16,7 @@ main {
 /* -------------- Utility --------------  */
 .container {
     max-width:900px;
-    margin: 35px auto;
+    margin: 80px auto;
     background:white;
     border-radius:1rem;
 }
@@ -156,6 +156,9 @@ main {
 
 /* Footer Non richiesto dall'esercizio */
 .exercise-footer {
+    position:fixed;
+    width:100%;
+    bottom:0;
     text-align: center;
     margin-top: 1rem;
     padding: 1.5rem 20%;
