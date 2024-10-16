@@ -158,10 +158,10 @@ main {
 .exercise-footer {
     text-align: center;
     margin-top: 1rem;
-    border-top:1px solid #031732;
     padding: 1.5rem 20%;
     background-color: #eaedf0;
     color:#031732;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
 }
 
 .exercise-footer p {
