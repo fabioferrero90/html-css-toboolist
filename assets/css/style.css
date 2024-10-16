@@ -6,20 +6,19 @@
 
 body {
     font-family:'Montserrat', sans-serif;
+    background-color: #f2f6f8;
 }
 
 main {
-    padding-top:50px;
     padding-bottom:30px;
-    background-color: #f6f8fa;
 }
 
 /* -------------- Utility --------------  */
 .container {
     max-width:900px;
-    margin:0 auto;
+    margin: 35px auto;
     background:white;
-    padding: 20px 40px;
+    border-radius:1rem;
 }
 
 /* ------------- Header Styling -------------- */
@@ -43,9 +42,14 @@ main {
     letter-spacing: -.05rem;
 }
 
+#actionsbar,
+#tasklist {
+    padding: 20px 40px;
+}
+
 /* ------------ Actions Bar ------------  */
 #actionsbar {
-    padding-bottom:30px;
+    border-bottom: 2px solid #f2f6f8;
 }
 
 #actionsbar button {
@@ -69,9 +73,6 @@ main {
 }
 
 /* ------------ Task List ------------  */
-#tasklist {
-    padding: 10px 15px;
-}
 
 #tasklist ul{
     list-style: none;
@@ -83,7 +84,7 @@ main {
 }
 
 #tasklist .category::before {
-    content:'\25BC';
+    content:'\25BE';
     margin-right:5px;
 }
 
@@ -92,101 +93,95 @@ main {
 }
 
 /* --------------- Task Categories ---------------- */
-#tasklist .task.editorial::after {
-    content:"Editorial";
+#tasklist .task::after {
     margin-left: 10px;
-    background-color: #4dabe2;
-    color:white;
     font-size: 0.7rem;
+    color:white;
     padding: 5px 12px;
     border-radius:2rem;
+}
+
+#tasklist .task.editorial::after {
+    content:"Editorial";
+    background-color: #4dabe2;
 }
 
 #tasklist .task.q1_goals::after {
     content:"Q1 Goals";
-    margin-left: 10px;
     background-color: #9b72e4;
-    color:white;
-    font-size: 0.7rem;
-    padding: 5px 12px;
-    border-radius:2rem;
 }
 
 #tasklist .task.recruiting::after {
     content:"Recruiting";
-    margin-left: 10px;
     background-color: #6dbea7;
-    color:white;
-    font-size: 0.7rem;
-    padding: 5px 12px;
-    border-radius:2rem;
 }
 
 #tasklist .task.mobile::after {
     content:"Mobile";
-    margin-left: 10px;
     background-color: #f99a38;
-    color:white;
-    font-size: 0.7rem;
-    padding: 5px 12px;
-    border-radius:2rem;
 }
 
 #tasklist .task.website::after {
     content:"Website";
-    margin-left: 10px;
     background-color: #db63a1;
-    color:white;
-    font-size: 0.7rem;
-    padding: 5px 12px;
-    border-radius:2rem;
 }
 
 #tasklist .task.sales::after {
     content:"Sales";
-    margin-left: 10px;
     background-color: #b0c92d;
-    color:white;
-    font-size: 0.7rem;
-    padding: 5px 12px;
-    border-radius:2rem;
+}
+
+#tasklist .task::before {
+    display:inline-block;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size:0.8rem;
 }
 
 #tasklist .task.completed::before {
     content:'\2713';
-    display:inline-block;
-    line-height: 20px;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
     color:green;
     border:1px solid green;
-    border-radius: 50%;
 }
 
 #tasklist .task.uncompleted::before {
-    content:'\274C';
-    display:inline-block;
-    line-height: 20px;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    content:'\292B';
     color:red;
     border:1px solid red;
-    border-radius: 50%;
-    font-size:0.6rem;
 }
 
-/* Non richiesto dall'esercizio */
-footer {
-    padding-top: 10px;
-    background-color: white;
-}
-
-footer p {
-    padding-top:5px;
+/* Footer Non richiesto dall'esercizio */
+.exercise-footer {
     text-align: center;
-    font-style: italic;;
+    margin-top: 1rem;
+    border-top:1px solid #031732;
+    padding: 1.5rem 20%;
+    background-color: #eaedf0;
+    color:#031732;
+}
+
+.exercise-footer p {
+    display: inline-block;
+    font-size:0.7rem;
+    margin-left: 10px;
+}
+
+.exercise-footer .highlighted{
+    background-color: #d9ff66;
+    border-radius:0.5rem;
+    padding:2px 5px;
+}
+
+.exercise-footer .boolean-logo {
+    display: inline-block;
+    vertical-align: middle;
+    height:30px;
+}
+
+.exercise-footer .boolean-logo:hover {
+    transform:scale(1.05)
 }
